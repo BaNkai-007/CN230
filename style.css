@@ -109,7 +109,7 @@ nav ul li{
     transform: scale(1.1);
 }
 
-#bag :hover {
+#upload :hover {
     color: #0F2C59;
     transition: .2s;
     transform: scale(1.1);
@@ -365,7 +365,7 @@ h2 {
     height: 10vh;
     position: absolute;
     margin-top: -100px;
-    margin-left: -70px;
+    margin-left: -38px;
     position: absolute;
 }
 
