@@ -18,11 +18,11 @@ RECIPE SHARING PLATFORM
 
 Project Goal:
 
-With this platform we aim to make sharing and finding Recipes of food around the world Easy and Fun.
+With this platform we aim to make sharing and finding recipes of food around the world easy and fun.
 
 We are targeting food enthusiasts and people who take a keen interest in cooking and like to create new recipes every day.
 
-We will Create a Recipe Sharing Platform using technologies like:
+We will create a recipe sharing platform using technologies like:
 
 1. HTML
 
