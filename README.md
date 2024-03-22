@@ -4,10 +4,10 @@ Team Code - CN230
 
 Problem Code - WD203
 
-Members - Sasmit Dey Sarkar (12322136)
-          Amit Singh (1231805)
-          Saurabh Raj (12314889)
-          Tirtharaj Dutta Roy (12323508)
+Members - Sasmit Dey Sarkar (12322136),
+          Amit Singh (1231805),
+          Saurabh Raj (12314889),
+          Tirtharaj Dutta Roy (12323508),
           Anurag Majumdar (12314397)
 
 Problem Statement - Cooking enthusiasts often face challenges in discovering new recipes, organizing their culinary creations, and sharing their favorite dishes with others. Additionally, novice cooks may struggle to find reliable recipes tailored to their skill level and dietary preferences. Your task is to develop a web-based platform that serves as a hub for recipe sharing, enabling users to discover, save, and share recipes while fostering a community of passionate home cooks and food lovers.  
