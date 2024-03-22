@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ recipe.title }}</title>
+</head>
+<body>
+    <h1>{{ recipe.title }}</h1>
+    <img src="{{ recipe.image_url }}" alt="{{ recipe.title }}" width="200">
+    <p><strong>Ingredients:</strong></p>
+    <p>{{ recipe.ingredients }}</p>
+    <p><strong>Instructions:</strong></p>
+    <p>{{ recipe.instructions }}</p>
+    <p><strong>Rating: {{ recipe.rating }} ({{ recipe.num_ratings }} ratings)</strong></p>
+
+    <form method="POST" action="{{ url_for('rate_recipe', recipe_id=recipe.id) }}">
+        <label for="rating">Rate this recipe:</label>
+        <input type="number" name="rating" step="0.1" min="0" max="5" required>
+        <input type="submit" value="Rate">
+    </form>
+
+    <h2>Comments</h2>
+    <ul>
+        {% for comment in recipe.comments %}
+        <li>{{ comment.content }}</li>
+        {% endfor %}
+    </ul>
+
+    <form method="POST" action="{{ url_for('comment', recipe_id=recipe.id) }}">
+        <label for="content">Leave a comment:</label>
+        <textarea name="content" required></textarea>
+        <input type="submit" value="Submit Comment">
+    </form>
+</body>
+</html>
