@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="post.css">
     <link rel="icon" type="image/x-icon" href="contents2/cook-book.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>CookBook</title>
@@ -52,44 +52,48 @@
     </div>
 </header>
 <body>
-    
-    <h1 class="eat">EAT WHAT SUITS YOUR MOOD</h1>
-    
 
-    <!---featured catagories-->
-<div class="catagories">
-    <div class="row-2">
-        <h2>TASTE OF THE DAY</h2>
-        <div class="col-3"><a href="#"><img src=""></a></div>
-        <div class="col-3"><a href="#"><img src=""></a></div>
-        <div class="col-3"><a href="#"><img src=""></a></div>
-        
-
-    </div>
-</div> 
-<div class="footer">
-    <div class="container-2">
-            <div class="footer-col-1">
-                <h3>EXPERIENCE COOKBOOK APP ON MOBILE</h3>
-                <img class="playstore" src="contents\playstore.png" alt="">
-                <img class="appstore" src="contents\appstore.png" alt="">
-                <p>Downlaod App for Android and IOS.</p>
-            </div>
+        <div class="container">
+            <h1>Post Your Recipe</h1>
+            <form class="recipe-form" action="#" method="post">
+                <label for="recipe-title">Recipe Title:</label>
+                <input type="text" id="recipe-title" name="recipe-title" required>
                 
+                <label for="ingredients">Ingredients:</label>
+                <textarea id="ingredients" name="ingredients" rows="5" required></textarea>
                 
-                <div class="footer-col-4">
-                    <ul>
-                        <li><h3>KEEP IN TOUCH</h3></li>
-                        <div class="socials">
-                            <li><i class="fa-brands fa-instagram"></i></li>
-                            <li><i class="fa-brands fa-facebook"></i></li>
-                            <li><i class="fa-brands fa-square-twitter"></i></li>
-                            <li><i class="fa-brands fa-youtube"></i></li>
-                        </div>
-                    </ul>
-                </div>
+                <label for="instructions">Instructions:</label>
+                <textarea id="instructions" name="instructions" rows="10" required></textarea>
                 
+                <label for="cooking-time">Cooking Time (minutes):</label>
+                <input type="text" id="cooking-time" name="cooking-time" required>
+                
+                <label for="difficulty-level">Difficulty Level:</label>
+                <select id="difficulty-level" name="difficulty-level" required>
+                    <option value="">Select</option>
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+                
+                <label for="serving-size">Serving Size:</label>
+                <input type="text" id="serving-size" name="serving-size" required>
+                
+                <label for="cuisine-type">Cuisine Type:</label>
+                <select id="cuisine-type" name="cuisine-type" required>
+                    <option value="">Select</option>
+                    <option value="american">American</option>
+                    <option value="italian">Italian</option>
+                    <option value="mexican">Mexican</option>
+                    <option value="chinese">Chinese</option>
+                    <!-- Add more options as needed -->
+                </select>
+                
+                <input type="submit" value="Post Recipe">
+            </form>
         </div>
+    <!---featured catagories-->
+
         <div class="last-line">
             <div class="contact">
                 <p>In case of any concern, <a href="contact-us.html"><b>Contact Us</b></a></p>

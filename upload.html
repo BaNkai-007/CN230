@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="upload.css">
+    <title>Recipe Posting Page</title>
+</head>
+<header>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="contents2\cook-book.png" alt="CookBook"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li id="search-bar"><form action="#">
+                        <input type="text" placeholder="Find Your Taste" name="search">
+                        <button class="search-icon">
+                            <i class="fa-solid fa-magnifying-glass" style="font-size: 15px;"></i>
+                        </button>
+                    </form></li>
+                    <li class="option"><a href="recipies.html">RECIPIES</a></li>
+                    
+                    
+                    <li id="options"><a href="aboutus.html">ABOUT</a></li>
+                    <li id="acc"><button class="profile" onclick="openPopup()">
+                        <i class="fa-solid fa-user" ></i>
+                    </button></li>
+                    <li id="wish"><a href="#"><i class="fa-sharp fa-solid fa-heart"></i></a></li>
+                    <li id="acc"><button class="profile" onclick="openPopup()">
+                        <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </button></li>
+                </ul>
+            </nav>
+        </div>
+        </div>
+    </div>
+    <div class="loginpage">
+        <div class="popup" id="popup">
+            <div class="xmark"><i class="fa-solid fa-xmark" class="xmark" onclick="closePopup()"></i></div>
+            <img src="contents2/cook-book.png">
+            <h2>LOG IN</h2><br>
+            <label for="email" class="email">EMAIL</label><br><br><input type="email" required><br>
+            <br>
+            <label for="password" class="pass">PASSWORD</label><br><br><input type="password" required>
+            <br>
+            <br><button type="button" class="login" onclick="closePopup()">Log In</button>
+        </div>
+    </div>
+</header>
+<body>
+    <div class="container">
+        <h1>Post Your Recipe</h1>
+        <form class="recipe-form" action="#" method="post">
+            <label for="recipe-title">Recipe Title:</label>
+            <input type="text" id="recipe-title" name="recipe-title" required>
+            
+            <label for="ingredients">Ingredients:</label>
+            <textarea id="ingredients" name="ingredients" rows="5" required></textarea>
+            
+            <label for="instructions">Instructions:</label>
+            <textarea id="instructions" name="instructions" rows="10" required></textarea>
+            
+            <label for="cooking-time">Cooking Time (minutes):</label>
+            <input type="text" id="cooking-time" name="cooking-time" required>
+            
+            <label for="difficulty-level">Difficulty Level:</label>
+            <select id="difficulty-level" name="difficulty-level" required>
+                <option value="">Select</option>
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            
+            <label for="serving-size">Serving Size:</label>
+            <input type="text" id="serving-size" name="serving-size" required>
+            
+            <label for="cuisine-type">Cuisine Type:</label>
+            <select id="cuisine-type" name="cuisine-type" required>
+                <option value="">Select</option>
+                <option value="american">American</option>
+                <option value="italian">Italian</option>
+                <option value="mexican">Mexican</option>
+                <option value="chinese">Chinese</option>
+                <!-- Add more options as needed -->
+            </select>
+            
+            <input type="submit" value="Post Recipe">
+        </form>
+    </div>
+    <script>
+        let popup = document.getElementById("popup");
+    
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
+    </script>   
+</body>
+</html>
