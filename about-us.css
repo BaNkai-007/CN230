@@ -29,6 +29,7 @@ header{
 
 .logo img{
     width: 6.25rem;
+    color: #0F2C59;
 }
 
 
@@ -437,6 +438,14 @@ h1{
     z-index: 6;
     color: #0F2C59;
 }
+
+.about-page p{
+    color: #0F2C59;
+    width: 60%;
+    height: 60%;
+    margin-bottom: 1rem;
+}
+
 body{
     background-color: #FFF2D8;
 }
