@@ -27,7 +27,7 @@ body{
     top: 0;
     overflow: hidden;
     z-index: 2;
-    background-image: url(contents/navbar-bg.png);
+    background-image: url("contents2/navbar-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     backdrop-filter: blur(3px);
@@ -48,29 +48,30 @@ nav ul form {
 nav ul li input[type=text]{
     width: 25rem;
     height: 2.55rem;
-    border-radius: .2rem;
+    border-radius: 1.5rem;
     border: none;
-    color: #0F2C59;
+    color: #65451F;
+    background-color: #ffffff;
     text-indent: 2%;
 }
 
 .search-icon{
-    background-color: rgb(255, 255, 255);
-    color: #0F2C59;
+    background-color: #ffffff;
+    color: #65451F;
     padding: .62rem .62rem;
     float: left;
     margin-left: 2.55rem;
     margin-right: .2rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
     border: none;
     cursor: pointer;
-    border-radius: .2rem;
+    border-radius: 50%;
 }
 
 .profile{
     background-color: transparent;
     border: none;
-    color: white;
+    color: #ffffff;
 }
 
 ::placeholder{
@@ -86,7 +87,10 @@ nav{
 nav ul{
     display: inline-block;
     list-style-type: none;
+    color: #65451F;
 }
+
+
 
 nav ul li{
     display: inline-block;
@@ -95,6 +99,10 @@ nav ul li{
 
     
     
+}
+
+#wish {
+    color:#65451F;
 }
 
 #wish :hover{
@@ -109,7 +117,7 @@ nav ul li{
     transform: scale(1.1);
 }
 
-#bag :hover {
+#upload :hover {
     color: #0F2C59;
     transition: .2s;
     transform: scale(1.1);
@@ -365,7 +373,7 @@ h2 {
     height: 10vh;
     position: absolute;
     margin-top: -100px;
-    margin-left: -70px;
+    margin-left: -38px;
     position: absolute;
 }
 
