@@ -5,6 +5,13 @@
     
 }
 
+
+body{
+    background-image: url("about_us_image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 header{
     top: auto;
     height: 100px;
@@ -15,21 +22,24 @@ header{
 .navbar{
     display: flex;
     padding: 20px;
-    height: 100px;
+    margin: 0px;
+    height: 120px;
     position: fixed;
     width: 100%;
     top: 0;
     overflow: hidden;
     z-index: 2;
-    background-image: url(contents/navbar-bg.png);
+    background-image: url("navbar-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     backdrop-filter: blur(4px);
 }
 
 .logo img{
-    width: 6.25rem;
+    width: 5.25rem;
     color: #0F2C59;
+    border-radius: 20%;
+    margin-top: 0px; 
 }
 
 
@@ -42,7 +52,7 @@ nav ul form {
 nav ul li input[type=text]{
     width: 25rem;
     height: 2.55rem;
-    border-radius: .2rem;
+    border-radius: 2rem;
     border: none;
     color: #0F2C59;
     text-indent: 2%;
@@ -58,7 +68,7 @@ nav ul li input[type=text]{
     font-size: 1.1rem;
     border: none;
     cursor: pointer;
-    border-radius: .2rem;
+    border-radius: 2rem;
 }
 
 .profile{
@@ -439,13 +449,25 @@ h1{
     color: #0F2C59;
 }
 
-.about-page p{
-    color: #0F2C59;
-    width: 60%;
-    height: 60%;
-    margin-bottom: 1rem;
+.about-page{
+    align-items: center;
+    text-align: justify;
+    font-size: 22px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    padding: 2.5% 2.5% 2.5% 2.5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 170%;
+    border-radius: 10%;
+    position: absolute;
+    background: rgba(247, 245, 245, 0.7);
 }
 
-body{
-    background-color: #FFF2D8;
+.about-page p{
+    color: #0F2C59;
+}
+
+.box{
+  opacity: 1000;
 }
