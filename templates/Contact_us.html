@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..\static\styles\Contact_us.css">
+    <link rel="icon" type="image/x-icon" href="../static/images/cook-book.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Recipe-sharing-platform</title>
+</head>
+<header>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="..\static\images\cook-book.png" alt="CookBook"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li id="search-bar"><form action="#">
+                        <input type="text" placeholder="Find Your Style" name="search">
+                        <button class="search-icon">
+                            <i class="fa-solid fa-magnifying-glass" style="font-size: 15px;"></i>
+                        </button>
+                    </form></li>
+                    <li id="options"><a href="products.html">PRODUCTS</a></li>
+                
+                    <li id="options"><a href="Contact_us.html"</a></li>
+                    <li id="acc"><button class="profile" onclick="openPopup()">
+                        <i class="fa-solid fa-user" ></i>
+                    </button></li>
+                    <li id="wish"><a href="#"><i class="fa-sharp fa-solid fa-heart"></i></a></li>
+                    <li id="bag"><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+        </div>
+    </div>
+    <div class="loginpage">
+        <div class="popup" id="popup">
+            <div class="xmark"><i class="fa-solid fa-xmark" class="xmark" onclick="closePopup()"></i></div>
+            <img src="..\static\images\cook-book.png">
+            <h2>LOG IN</h2><br>
+            <label for="" class="email">EMAIL</label><br><br><input type="email" required><br>
+            <br>
+            <label for="" class="pass">PASSWORD</label><br><br><input type="password" required>
+            <br>
+            <br><button type="button" class="login" onclick="closePopup()">Log In</button>
+        </div>
+    </div>
+</header>
+<body>
+    <p>
+    <div class="Contact_Us">
+        <div class="box">
+            <h1>Contact Us</h1>
+            <form action="#" method="post">
+                <div id="roww">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject">
+                </div>
+                <br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="6" required></textarea>
+            <input type="submit" value="Submit">
+            </form>
+            <p><strong>Business Address:</strong> Lovely Professional University<br>
+            CookBook<br>
+            Grand Trunk Road<br>
+            Jalandhar, Punjab, 123456<br>
+            India</p>
+            <p><strong>Phone Number:</strong> 9874561230<br></p>
+            <p><strong>Email Address:</strong> abd@gmail.com<br></p>
+            <p><strong>Operating Hours:</strong> 09 am to 5 pm<br></p>
+            <div class="social">
+            <p><br>
+            <a href="#" class="insta">
+                <i class="fa-brands fa-instagram"></i>
+                <span style="padding-left: 5px;"></span>
+                <span style="padding-right: 5px;"></span>
+                <span style="font-size: 25px;"></span>
+            </a>
+            <a href="#" class="twit">
+                <i class="fa-brands fa-twitter"></i>
+                <span style="padding-left: 5px;"></span>
+                <span style="padding-right: 5px;"></span>
+                <span style="font-size: 25px;"></span>
+            </a>
+            <a href="#" class="face">
+                <i class="fa-brands fa-facebook"></i>
+                <span style="padding-left: 5px;"></span>
+                <span style="padding-right: 5px;"></span>
+                <span style="font-size: 25px;"></span>
+            </a></p>
+            </div>
+    </div>
+    </p>    
+</body>
+</html>

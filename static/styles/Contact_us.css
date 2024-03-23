@@ -7,9 +7,10 @@
 
 
 body{
-    background-image: url("../images/about_us_image.jpg");
-    background-size: cover;
+    background-image: url("../images/contact_us.jpg");
     background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover; 
 }
 
 header{
@@ -355,10 +356,6 @@ h1{
     text-align: match-parent;
 }
 
-.about-image{
-    background-image: url("../images/homepage-cover.png");
-}
-
 .loginpage{
     width: 100%;
     height: 15vh;
@@ -449,13 +446,13 @@ h1{
     color: #0F2C59;
 }
 
-.about-page{
+.Contact_Us{
     align-items: center;
     text-align: justify;
-    font-size: 22px;
+    font-size: 18px;
     margin-left: 20%;
     margin-right: 20%;
-    margin-top: 5%;
+    margin-top: 1.5%;
     padding: 2.5% 2.5% 2.5% 2.5%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     line-height: 170%;
@@ -464,10 +461,59 @@ h1{
     background: rgba(247, 245, 245, 0.7);
 }
 
-.about-page p{
+.Contact_Us p{
     color: #0F2C59;
 }
 
 .box{
   opacity: 1000;
+  margin-top: -15%;
+}
+
+.insta{
+    font-size: 35px;
+}
+
+.twit{
+    font-size: 35px;
+}
+
+.face{
+    font-size: 35px;
+}
+
+.social{
+    text-align: center;
+}
+
+#name{
+    width:100%;
+    padding: 5px 5px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+#email{
+    width:100%;
+    padding: 5px 5px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+#subject{
+    width:100%;
+    padding: 5px 5px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+#message{
+    width:100%;
+    padding: 5px 5px;
+    margin: 8px 0;
+}
+
+.Contact_Us{
+    margin-left: 25%;
+    margin-bottom: 20%;
 }
