@@ -30,7 +30,7 @@ We will create a recipe sharing platform using technologies like:
 
 3. JAVASCRIPT
 
-4. DJANGO/FLASK
+4. FLASK
 
 5. GitHub
 
