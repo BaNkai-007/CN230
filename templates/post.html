@@ -58,6 +58,9 @@
             <label for="recipe-title">Recipe Title:</label>
             <input type="text" id="recipe-title" name="recipe-title" required>
             
+            <label for="image_url" action="/upload" method="post">Image URL</label>
+            <input type="file" id="image_url" name="image_url">
+
             <label for="ingredients">Ingredients:</label>
             <textarea id="ingredients" name="ingredients" rows="5" required></textarea>
             
@@ -68,11 +71,8 @@
             <input type="text" id="cooking-time" name="cooking-time" required>
             
             <label for="veg-non-veg">Veg / Non-Veg:</label>
-            <select id="veg-non-veg" name="difficulty-level" required>
-                <option value="">Select</option>
-                <option value="easy">Veg</option>
-                <option value="medium">Non-Veg</option>
-            </select></div>
+            <input type="text" id="vegnonveg" name="vegnonveg" placeholder="veg/nonveg" required>
+        </div>
             <div class="food-info">
             <label for="serving-size">Serving Size:</label>
             <input type="text" id="serving-size" name="serving-size" required>
