@@ -5,7 +5,7 @@ Team Code - CN230
 Problem Code - WD203
 
 Members - Sasmit Dey Sarkar (12322136),
-          Amit Singh (1231805),
+          Amit Singh (12318053),
           Saurabh Raj (12314889),
           Tirtharaj Dutta Roy (12323508),
           Anurag Majumder (12314397)
