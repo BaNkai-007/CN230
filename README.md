@@ -32,9 +32,7 @@ We will create a recipe sharing platform using technologies like:
 
 4. DJANGO/FLASK
 
-5. REACTJS
-
-6. GitHub
+5. GitHub
 
 Users will be able to find and upload recipes of cuisines of around the world on our platform in all the formats (Pictures, Video and Text).
 
