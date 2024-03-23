@@ -74,19 +74,21 @@
     <div class="wrapper">
         <form action="">
             <h1>Login</h1>
-            <div class="input-box">
-                <input type="text" placeholder="Username" required>
-            </div>
-            <div class="input-box">
-                <input type="password" placeholder="Password" required>
-            </div>
+
+            <form class="login-form" action="#" method="post">
+                <label for="username" action="#" method="post">UserName</label>
+                <input type="text" id="username" name="username">
+                <label for="password" action="#" method="post">Password</label>
+                <input type="password" id="password" name="password">
+                <input id="submit" type="submit" value="Log In">
+            </form>
 
             <div class="forgot">
                 <label><input type="checkbox"> Remember me</label>
                 <a href="#">Forgot Password?</a>
             </div>
 
-            <button type="submit" class="btn">Login</button>
+            <!-- <button type="submit" class="btn">Login</button> -->
 
             <div class="register">
                 <p>Don't have an account? <a href="#">Register</a></p>
