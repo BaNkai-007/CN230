@@ -27,7 +27,7 @@ header{
 .navbar{
     display: flex;
     padding: 20px;
-    height: 100px;
+    height: 120px;
     position: fixed;
     width: 100%;
     top: 0;
@@ -41,6 +41,7 @@ header{
 
 .logo img{
     width: 5.25rem;
+    border-radius: 20px;
     
 }
 
@@ -222,6 +223,7 @@ h1 , h2{
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing:content-box;
+    border-radius: 20px;
 }
 
 #cooking-time{
@@ -239,4 +241,9 @@ h1 , h2{
     padding-bottom: 10px;
     justify-content: space-around;
     width: 105%;
+}
+
+#submit{
+    width: 30%;
+    margin-left: 35%;
 }
