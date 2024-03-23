@@ -21,7 +21,7 @@
                             <i class="fa-solid fa-magnifying-glass" style="font-size: 15px;"></i>
                         </button>
                     </form></li>
-                    <li class="option"><a href="recipies.html">RECIPES</a></li>
+                    <li id="options"><a href="recipies.html">RECIPES</a></li>
                     
                     
                     <li id="options"><a href="aboutus.html">ABOUT</a></li>
@@ -51,6 +51,39 @@
     </div> -->
 </header>
 <body>
-    
+    <div class="container">
+        <h1>POST YOUR RECIPE</h1>
+        <form class="recipe-form" action="#" method="post">
+            <label for="recipe-title">Recipe Title:</label>
+            <input type="text" id="recipe-title" name="recipe-title" required>
+            
+            <label for="ingredients">Ingredients:</label>
+            <textarea id="ingredients" name="ingredients" rows="5" required></textarea>
+            
+            <label for="instructions">Instructions:</label>
+            <textarea id="instructions" name="instructions" rows="10" required></textarea>
+            <div class="food-info">
+            <label for="cooking-time">Cooking Time(minutes):</label>
+            <input type="text" id="cooking-time" name="cooking-time" required>
+            
+            <label for="veg-non-veg">Veg / Non-Veg:</label>
+            <select id="veg-non-veg" name="difficulty-level" required>
+                <option value="">Select</option>
+                <option value="easy">Veg</option>
+                <option value="medium">Non-Veg</option>
+            </select></div>
+            <div class="food-info">
+            <label for="serving-size">Serving Size:</label>
+            <input type="text" id="serving-size" name="serving-size" required>
+            
+            <label for="cuisine-type">Cuisine Type:</label>
+            <input type="text" id="cuisine-type" name="cuisine-type" required>
+            </div>
+                <!-- Add more options as needed -->
+            </select>
+            
+            <input type="submit" value="Post Recipe">
+        </form>
+    </div>
 </body>
 </html>
