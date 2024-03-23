@@ -68,8 +68,11 @@ def view_recipe(recipe_id):
         flash('Thank you for rating the recipe!', 'success')
 
     return render_template('view_recipe.html', recipe=recipe)
-#RECIPE TESTINGSIDNGAODINGAOSDIGHAOSIDHG
-@app.route('/rec',methods=['GET','POST'])
+
+# #RECIPE TESTINGSIDNGAODINGAOSDIGHAOSIDHG
+# @app.route('/rec',methods=['GET','POST'])
+
+
 def show_recipe():
     return render_template('view_recipe.html')
 
