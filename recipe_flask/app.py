@@ -1,4 +1,3 @@
-
 from flask import Flask, render_template, request, redirect, url_for, flash
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import func
@@ -53,7 +52,7 @@ def view_recipe(recipe_id):
     if request.method == 'POST':
         rating = float(request.form['rating'])
 
-        recipe.rating = (recipe.rating * recipe.num_ratings + rating) / (recipe.num_ratings + 1)
+        recipe.rating = (recipe.rating * recipe.num_ratings + rating) // (recipe.num_ratings + 1)
         recipe.num_ratings += 1
 
         db.session.commit()
@@ -65,7 +64,16 @@ def view_recipe(recipe_id):
 @app.route('/rate_recipe/<int:recipe_id>', methods=['POST'])
 def rate_recipe(recipe_id):
     # Implement rating a recipe logic here
-    pass
+    recipe = Recipe.query.get_or_404(recipe_id)
+    if request.method == 'POST':
+        rating = float(request.form['rating'])
+
+        recipe.rating = (recipe.rating * recipe.num_ratings + rating) / (recipe.num_ratings + 1)
+        recipe.rating = round(recipe.rating,2)
+        recipe.num_ratings += 1
+
+        db.session.commit()
+    return render_template('view_recipe.html',recipe=recipe)
 
 @app.route('/comment/<int:recipe_id>', methods=['POST'])
 def comment(recipe_id):
