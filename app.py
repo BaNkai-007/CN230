@@ -117,6 +117,21 @@ class User(UserMixin, db.Model):
     username = db.Column(db.String(50), unique=True, nullable=False)
     password = db.Column(db.String(100), nullable=False)
 
+@app.route('/signin',methods=['GET','POST'])
+def signin():
+    if request.method == 'POST':
+        username = request.form['username']
+        password = request.form['password']
+
+        new_user = User(username=username,password=password)
+        db.session.add(new_user)
+        db.session.commit()
+
+        flash('User registered successfully!', 'success')
+        return redirect(url_for('index'))
+
+    return render_template('login.html')
+
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
