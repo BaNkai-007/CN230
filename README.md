@@ -15,8 +15,8 @@ Problem Statement - Cooking enthusiasts often face challenges in discovering new
 ************************************************************************************************************************************************************************************************************************
 
 IMPORTANT - SINCE WE HAVE NOT LINKED THE PAGES WITH THE BACKEND COMPLETELY, KINDLY START APP.PY AND USE:
-                    URL/SIGNIN  - SIGNIN PAGE
-                    URL/SUBMIT_RECIPE - FOR SUBMITTING RECIPE
+                    URL/SIGNIN  - SIGNIN PAGE,
+                    URL/SUBMIT_RECIPE - FOR SUBMITTING RECIPE,
                     URL/RECIPE/<ID> - FOR VIEWING AND RATING RECIPES (ID'S ARE WHOLE INTEGERS AND ARE MADE AFTER SUBMITTING ATLEAST ONE RECIPE
 
 
