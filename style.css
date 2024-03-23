@@ -13,10 +13,11 @@ header{
 
 body{
     background-color: #f6f6f6;
-    background-image: url("contents2/pexels-ella-olsson-1640774.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),
+                       rgba(0, 0, 0, 0.2)), url("contents2/pexels-ella-olsson-1640774.jpg");
     background-repeat: no-repeat;
     background-size: 170%;
-    height: 100vh;
+    height: 110vh;
 }
 
 .ear{
@@ -204,6 +205,7 @@ nav ul li i{
 }
 
 .row-2{
+    padding-top: 60vh;
     padding-left: 17%;
     padding-right: 17%;
 }  
@@ -219,7 +221,8 @@ h2 {
     text-align: center;
     margin-bottom: 2.5rem;
     margin-top: -1.25rem;
-    color: #0F2C59;
+    color: #ffffff;
+    text-shadow: #113946;
 }
 
 
