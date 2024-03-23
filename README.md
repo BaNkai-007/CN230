@@ -14,6 +14,16 @@ Problem Statement - Cooking enthusiasts often face challenges in discovering new
 
 ************************************************************************************************************************************************************************************************************************
 
+IMPORTANT - SINCE WE HAVE NOT LINKED THE PAGES WITH THE BACKEND COMPLETELY, KINDLY START APP.PY AND USE:
+                    URL/SIGNIN  - SIGNIN PAGE
+                    URL/SUBMIT_RECIPE - FOR SUBMITTING RECIPE
+                    URL/RECIPE/<ID> - FOR VIEWING AND RATING RECIPES (ID'S ARE WHOLE INTEGERS AND ARE MADE AFTER SUBMITTING ATLEAST ONE RECIPE
+
+
+
+
+
+************************************************************************************************************************************************************************************************************************
 RECIPE SHARING PLATFORM
 
 Project Goal:
@@ -30,27 +40,27 @@ We will create a recipe sharing platform using technologies like:
 
 3. JAVASCRIPT
 
-4. DJANGO/FLASK
+4. FLASK
 
-5. GitHub
+5. GITHUB
 
 Users will be able to find and upload recipes of cuisines of around the world on our platform in all the formats (Pictures, Video and Text).
 
 Key Features:
 
-1. User Registration and Profile Creations.
+1. User Registration and Profile Creations - Achieved.
 
-2. Recipe Creation and Management.
+2. Recipe Creation and Management - Recipes can be created and rated and comments can be made on them that are stored in a database.
 
-3. Recipe Discovery.
+3. Recipe Discovery - Not yet implemented.
 
-4. Recipe Saving and Favorites.
+4. Recipe Saving and Favorites - Not yet implemented.
 
-5. Social Interaction.
+5. Social Interaction - Achieved through comments system.
 
-6. Nutritional Information.
+6. Nutritional Information - Achieved in recipe posting page.
 
-7. Multimedia Support.
+7. Multimedia Support - Partially achieved with the ability to input image urls for your recipes, video integration yet to be implemented.
 
 
 #EatWhatSuitsYourMOOD.
