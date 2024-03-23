@@ -14,7 +14,7 @@ header{
 body{
     background-color: #f6f6f6;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2),
-                       rgba(0, 0, 0, 0.2)), url("contents2/pexels-ella-olsson-1640774.jpg");
+                       rgba(0, 0, 0, 0.2)), url("../images/pexels-ella-olsson-1640774.jpg");
     background-repeat: no-repeat;
     background-size: 170%;
     height: 110vh;
@@ -33,7 +33,7 @@ body{
     top: 0;
     overflow: hidden;
     z-index: 2;
-    background-image: url("contents2/navbar-bg.png");
+    background-image: url("../images/navbar-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     backdrop-filter: blur(3px);
@@ -453,4 +453,8 @@ h2 {
     cursor: pointer;
     z-index: 6;
     color: #0F2C59;
+}
+
+.popup img{
+    border-radius: 20%;
 }

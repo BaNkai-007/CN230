@@ -7,7 +7,7 @@
 
 body{
     background-image: linear-gradient(rgba(0, 0, 0, 0.4),
-                       rgba(0, 0, 0, 0.2)), url("contents2/pexels-photo-1414651.jpeg");
+                       rgba(0, 0, 0, 0.2)), url("../static/images/pexels-photo-1414651.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -33,7 +33,7 @@ header{
     top: 0;
     overflow: hidden;
     z-index: 2;
-    background-image: url("contents2/navbar-bg.png");
+    background-image: url("../static/images/navbar-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     backdrop-filter: blur(3px);
