@@ -54,13 +54,10 @@
     </div>
 </header>
 <body>
-    <ul>
-        {% for recipe in recipes %}
-        <li>
-            <a href="{{ url_for('view_recipe', recipe_id=recipe.id) }}">{{ recipe.title }}</a>
-        </li>
-        {% endfor %}
-    </ul>
+   <div class="text">
+    <h1>WELCOME TO<br>CookBook</h1>
+   </div>
+
 
      
 
