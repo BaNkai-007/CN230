@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+    
+}
+
+body{
+    background-image: url("contents2/pexels-photo-1414651.jpeg");
+    background-size: cover;
+}
+
+header{
+    top: auto;
+    height: 30vh;
+    
+}
+
+
+
+.ear{
+    padding-top: 0%;
+}
+
+.navbar{
+    display: flex;
+    padding: 20px;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    overflow: hidden;
+    z-index: 2;
+    background-image: url("contents2/navbar-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(3px);
+}
+
+.logo img{
+    width: 5.25rem;
+    
+}
+
+
+nav ul form {
+    float: center;
+}
+
+
+
+nav ul li input[type=text]{
+    width: 25rem;
+    height: 2.55rem;
+    border-radius: 1.5rem;
+    border: none;
+    color: #65451F;
+    background-color: #ffffff;
+    text-indent: 2%;
+}
+
+nav ul li i{
+    font-size: 1.25rem;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: .938rem;
+    font-family: 'Segoe UI';
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+    color: #65451F;
+}
+
+.search-icon{
+    background-color: #ffffff;
+    color: #65451F;
+    padding: .62rem .62rem;
+    float: left;
+    margin-left: 2.55rem;
+    margin-right: .2rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.profile{
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+}
+
+::placeholder{
+    padding: .125rem;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+    
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+    color: #65451F;
+}
+
+
+
+nav ul li{
+    display: inline-block;
+    margin: .938rem;
+    font-family: 'Segoe UI';
+
+    
+    
+}
+
+#wish {
+    color:#65451F;
+}
+
+#wish :hover{
+    color: rgb(246, 0, 0);
+    transition: .2s;
+    transform: scale(1.2);
+}
+
+#acc :hover{
+    color: #0F2C59;
+    transition: .2s;
+    transform: scale(1.1);
+}
+
+#upload :hover {
+    color: #0F2C59;
+    transition: .2s;
+    transform: scale(1.1);
+}
+
+#options :hover{
+    color: #0F2C59;
+}
+
+
+#search-bar{
+    transition: 0s;
+    transform:scale();
+}
+
+a{
+    text-decoration: none;
+    color:#ffffff;
+}
+
+p{
+    color: #0F2C59;
+}
+
+.profile{
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+}
+
+::placeholder{
+    padding: .125rem;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
