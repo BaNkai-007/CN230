@@ -33,6 +33,18 @@ def index():
     recipes = Recipe.query.all()
     return render_template('index.html', recipes=recipes)
 
+@app.route('/post.html',methods=['GET','POST'])
+def post():
+    return render_template('post.html')
+
+@app.route('/aboutus.html',methods=['GET','POST'])
+def aboutus():
+    return render_template('aboutus.html')
+
+@app.route('/index.html',methods=['GET','POST'])
+def indexpage():
+    return render_template('index.html')
+
 @app.route('/submit_recipe', methods=['GET', 'POST'])
 def submit_recipe():
     if request.method == 'POST':
