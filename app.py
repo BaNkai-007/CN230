@@ -140,14 +140,14 @@ def login():
 
         user = User.query.filter_by(username=username).first()
 
-        if user.username == user.password:
+        if user(user.password, password):
             login_user(user)
             flash('Logged in successfully!', 'success')
-            return redirect(url_for('index'))
+            return redirect(url_for('index.html'))
         else:
             flash('Invalid username or password. Please try again.', 'danger')
 
-    return render_template('login.html')
+    return render_template('Login.html')
 
 
 @app.route('/logout')
