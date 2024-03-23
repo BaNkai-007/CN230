@@ -16,8 +16,8 @@ body{
     background-image: linear-gradient(rgba(0, 0, 0, 0.2),
                        rgba(0, 0, 0, 0.2)), url("../images/pexels-ella-olsson-1640774.jpg");
     background-repeat: no-repeat;
-    background-size: 170%;
-    height: 110vh;
+    background-size: 100%;
+    height: 133.5vh;
 }
 
 .ear{
@@ -457,4 +457,12 @@ h2 {
 
 .popup img{
     border-radius: 20%;
+}
+
+.text{
+    font-size: 250%;
+    text-align: center;
+    padding-top: 10%;
+    color: #f6f6f6;
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
 }
