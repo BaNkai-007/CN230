@@ -41,6 +41,10 @@ def post():
 def aboutus():
     return render_template('aboutus.html')
 
+@app.route('/recipes.html',methods=['GET','POST'])
+def recipe():
+    return render_template('Recipe.html')
+
 @app.route('/index.html',methods=['GET','POST'])
 def indexpage():
     return render_template('index.html')
@@ -129,7 +133,7 @@ class User(UserMixin, db.Model):
     username = db.Column(db.String(50), unique=True, nullable=False)
     password = db.Column(db.String(100), nullable=False)
 
-@app.route('/signin',methods=['GET','POST'])
+@app.route('/user',methods=['GET','POST'])
 def signin():
     if request.method == 'POST':
         username = request.form['username']

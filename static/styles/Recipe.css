@@ -13,7 +13,7 @@ header{
 
 body{
     background-color: #f6f6f6;
-    background-image: url("pexels-ella-olsson-1640774.jpg");
+    background-image: url("../images/pexels-ella-olsson-1640774.jpg");
     background-size: 100% ;
     background-repeat: no-repeat;
     height: 100vh;
@@ -27,7 +27,7 @@ body{
     top: 0;
     overflow: hidden;
     z-index: 2;
-    background-image: url("navbar-bg.png");
+    background-image: url("../images/navbar-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     backdrop-filter: blur(3px);
