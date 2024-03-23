@@ -130,7 +130,7 @@ def signin():
         flash('User registered successfully!', 'success')
         return redirect(url_for('index'))
 
-    return render_template('login.html')
+    return render_template('signup.html')
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
@@ -140,7 +140,7 @@ def login():
 
         user = User.query.filter_by(username=username).first()
 
-        if user(user.password, password):
+        if user.username == user.password:
             login_user(user)
             flash('Logged in successfully!', 'success')
             return redirect(url_for('index'))
